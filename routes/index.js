@@ -12,12 +12,6 @@ router.all('*', function(req, res, next) {
     next();
 });
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-
 /**
  * 单独充值Q币 mock接口
  */
