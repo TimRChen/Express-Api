@@ -1,0 +1,16 @@
+script(src="/javascripts/ajax.js")
+script.
+  let ajax = new Ajax();
+  const options = {
+    type: 'post',
+    url: '/timrchen/mongodb/data/temp',
+    async: true,
+    dataType: 'json'
+  };
+  clickAjax = () => {
+    ajax.send(options).then(data => {
+      
+    }).catch(error => {
+      console.log(error);
+    });
+  }
